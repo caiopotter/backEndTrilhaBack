@@ -17,9 +17,9 @@ class MovieController extends Controller
         return $movie;
     }
 
-    public function searchByBody(Request $request)
+    public function searchByOverview(Request $request)
     {
-        return Movie::whereLike('body', $request->param)->get();
+        return Movie::whereLike('overview', $request->param)->get();
     }
 
     public function searchByTitle(Request $request)

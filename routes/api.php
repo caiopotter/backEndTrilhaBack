@@ -57,7 +57,7 @@ Route::delete('movies/{id}', 'MovieController@delete');*/
 
 Route::get('movies', 'MovieController@index');
 Route::get('movies/{movie}', 'MovieController@show');
-Route::get('moviesSearchBody', 'MovieController@searchByBody');
+Route::get('moviesSearchOverview', 'MovieController@searchByOverview');
 Route::get('moviesSearchTitle', 'MovieController@searchByTitle');
 Route::post('movies', 'MovieController@store');
 Route::put('movies/{movie}', 'MovieController@update');
