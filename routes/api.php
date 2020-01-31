@@ -16,3 +16,7 @@ Route::get('users', 'UserController@index');
 Route::get('users/{user}', 'UserController@show');
 Route::get('usersSearchByEmail', 'UserController@searchByEmail');
 Route::post('users', 'UserController@store');
+
+Route::get('userFavorites/{user}', 'FavoriteController@userFavorites');
+Route::get('searchInFavorites/{user}', 'FavoriteController@searchInFavorites');
+Route::post('saveFavorite/{user}', 'FavoriteController@store');

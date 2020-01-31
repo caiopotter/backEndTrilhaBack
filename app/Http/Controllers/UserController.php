@@ -19,7 +19,7 @@ class UserController extends Controller
 
     public function searchByEmail(Request $request)
     {
-        return User::whereLike('email', $request->param)->get();
+        return User::where('email', $request->param)->get();
     }
 
     public function store(Request $request)

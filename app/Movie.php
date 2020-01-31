@@ -20,4 +20,8 @@ class Movie extends Model
     {
         return $query->orWhere($column, 'like', '%'.$value.'%');
     }
+    public function users()
+    {
+        return $this->belongsToMany('App\User', 'favorites');
+    }
 }
